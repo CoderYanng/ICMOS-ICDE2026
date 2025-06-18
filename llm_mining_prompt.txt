@@ -1,0 +1,72 @@
+You are an expert in Linux kernel configuration taxonomy design.
+
+Your task is to propose **0–5 general-purpose concepts** for the following kernel configuration item, based on:
+
+- Its help description
+- Its position in the configuration hierarchy
+- Concepts assigned to its **parent node**
+- Concetps assigned to its **sibling configuration items** (if any)
+
+Your goal is to help build a **consistent, human-readable, and hierarchical**  concept taxonomy to support understanding and navigation of kernel configs.
+
+---
+
+### Instructions:
+
+1. **Inheritance and Specialization**:
+   - Prioritize inheriting from the parent node's concept(s)(If existing), by reusing or specializing them into a more fine-grained subcategory.
+     - Example: If parent concept is `Memory Management`, child config may be labeled `Swap` or `Hugepage`.
+     - Ensure the new concept remains within the same conceptual branch.
+
+2. **Sibling Alignment (Optional)**:
+   - If sibling configs already have concepts, consider **reusing or generalizing** from them when applicable.
+   - Keep concept usage consistent among related configs.
+
+3. **Relevance and Generalization**:
+   - Propose concepts that reflect **real functional meaning** (e.g., kernel features, subsystems, hardware usage, performance domains).
+   - Avoid overly narrow, hardware-specific, or ad hoc tags (e.g., `x86_special_irq`, `ath10k_debug_flag`).
+   - Instead, generalize (e.g., `Interrupt Handling`, `Wireless Debugging`).
+
+4. **Hierarchy Fit**:
+   - All suggested concepts must map to the **existing concept hierarchy** (`suggested_concept_path`) provided below.
+   - Do **not create new concept categories** beyond the existing hierarchy.
+
+5. **Confidence Score**:
+   - Assign a `confidence` value (0.0–1.0) for each concept:
+     - `> 0.85`: Strong match (clear functional + hierarchical fit)
+     - `0.6–0.85`: Moderate confidence
+     - `< 0.6`: Weak – avoid unless no better alternatives
+
+---
+
+### Reference Concept Hierarchy:
+{basic_concept_taxonomy}
+
+### Parent Node Status(If existing):
+```json
+{parent_status}
+
+### Sibling Configuration Status (optional):
+{sibling_status}
+
+Output Format:
+Return an array of 0–5 concept objects (or [] if none apply):
+**Concept Path Format**:
+- `concept_name`: The final concept in the path (e.g., `"Debugging"`, `"USB Support"`).
+- `suggested_concept_path` **must be a complete, hierarchical path**, separated by `" -> "` e.g (Core Subsystem -> Debugging; Hardware Support → Peripheral Support → USB Support)
+
+```json
+{{
+    "new_labels": [
+        {{
+            "concept_name": "SuggestedLabel",
+            "suggested_concept_path": "Parent1 -> Parent2 -> SuggestedLabel",
+            "reason": "Explain why this label fits, including functional abstraction or sibling alignment",
+            "confidence": "Confidence Score, following standards"
+        }}
+    ]
+}}
+
+- ​**Configuration Context**:
+  Level info: {level_info}
+  Config info: {config_info}

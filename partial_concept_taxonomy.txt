@@ -1,0 +1,390 @@
+Core Subsystem
+  Debugging
+    Hardware Error Reporting
+    Debug Hardware Support
+    Kernel Testing
+      Benchmark Testing
+      Memory Testing
+      Concurrency Testing
+      Timekeeping Testing
+      Hardware Watchdog Testing
+      Floating Point Testing
+      Hardware Feature Testing
+      Memory Leak Testing
+      Race Condition Testing
+      Security Testing
+      Object Manager Testing
+      Livepatch Testing
+      Pointer Manipulation Testing
+      Virtual Memory Testing
+      Module Loading Testing
+      Usermode Helper Testing
+      Dynamic Debug Testing
+      Debugging Feature Testing
+      Static Key Testing
+      Kernel Feature Testing
+      Timing Testing
+      Delay Function Testing
+      Cryptographic Function Testing
+      Hash Function Testing
+      String Function Testing
+      Memory Operation Testing
+      Hardware Breakpoint Testing
+      Memory Initialization Testing
+      Compiler Feature Testing
+      Arithmetic Operation Testing
+      Type Checking Testing
+      Math Function Testing
+      Memory Allocator Testing
+      Memory Management Testing
+      Bit Operation Testing
+      Command Line Testing
+      API Testing
+      Numerical Range Testing
+      Data Structure Testing
+      Linked List Testing
+      System Control Testing
+      Resource Management Testing
+      Algorithm Testing
+      Bitwise Operations Testing
+      Firmware Testing
+      Userspace Interface Testing
+      Performance Testing
+      Network Device Testing
+      Data Path Testing
+      BPF Testing
+      JIT Compiler Testing
+      Memory Boundary Testing
+      Memory Subsystem Testing
+      Interrupt Timing Testing
+      Boot-time Testing
+      String Format Testing
+      Storage Testing
+      Per-CPU Testing
+      Error Correction Testing
+      Resource Tracking Testing
+      Stack Testing
+      Architecture Testing
+      Function Probe Testing
+      Runtime Testing
+      I/O Testing
+      Arithmetic Testing
+      CPU Testing
+      Crash Testing
+      Fault Injection
+      Code Coverage
+      Fuzzing
+    DebugFS
+    Block Layer
+    Memory Operations
+    Error Injection
+    Self-Test
+    Workaround
+    Debugging Interface
+    Configuration Filtering
+    Firmware Error Reporting
+    Module Autoloading Debugging
+    Crash Recovery
+    Kexec
+    System Call
+    Networking Debugging
+    Device Tree Debugging
+    Power Management Debugging
+    Runtime Verification
+      Exception Handling
+      Panic Reactor
+      Printk Reactor
+      Debug Output
+    Early Boot Debugging
+    Instrumentation Safety
+    Rockchip Crypto Debugging
+    Diagnostics
+    Experimental
+    Firmware Debugging
+    Sysfs Interface
+    KUnit Testing
+    Symbol Lookup Optimization
+    Buffer Handling
+    Early Debugging
+    IPC Testing
+  Logging & Tracing
+    Syslog
+    Tracing
+    Hardware Cryptography Debugging
+    Logging
+    Task Statistics
+    Process Accounting
+    Log Formatting
+      Log Metadata
+    Kernel Message Logging
+    Verbose Logging
+  Networking
+    Failover Netdev
+    Network Security
+    Inter-Process Communication
+    Remote Method Invocation
+    BPF
+    DNS Resolution
+    Wireless
+      Wireless Debugging
+      Mesh Networking
+      Wireless Security
+      High-Speed Wireless
+      HID Protocol
+      Protocol Filtering
+      Multicast Filtering
+    Protocol
+    CAN Protocol
+    Radio Protocol
+    Industrial Networking
+    Virtual Networking
+    NFC Support
+      NFC HCI Support
+    Network Testing
+    MPLS Support
+    Network Monitoring
+    Security Features
+    TLS Offload
+    IPsec
+    IP Multicast
+    Multipath TCP
+    Packet Labeling
+    IPv6
+      Route Information
+      Multicast
+    TCP Security
+    TCP Congestion Control
+    Socket Monitoring
+      Socket Management
+    Tunneling
+    TCP/IP
+    Multicast Routing
+    IP Configuration
+      RARP
+      BOOTP
+      DHCP
+    Routing
+    Advanced Networking
+      Firewall
+      Stateful Firewall
+    Load Balancing
+    Transport Protocols
+    ATM Support
+    Header Compression
+    Packet Scheduling
+    Packet Offloading
+    Packet Classification
+    Protocol Support
+    Time Synchronization
+    Dynamic Configuration
+    Link Aggregation
+    Network Administration
+    QoS
+    Promiscuous Mode
+    Testing & Diagnostics
+    Datacenter Networking Features
+    Data Center Bridging
+    Switchdev
+    Packet Filtering & Mangling
+    Connection Tracking
+    Packet Forwarding
+    Packet Duplication
+    Packet Transformation
+    Packet Flow Control
+    Network Analysis
+    Traffic Control
+    Bridge Offloading
+  Power Management
+    Error Reporting
+  Synchronization
+  Data Encoding
+  Parallel Processing
+  Scheduling
+    Preemption
+    Timer frequency
+    Timers
+    Fair Scheduler
+  Filesystem
+    Unicode Support
+    Executable File Formats
+    Encoding Support
+    Network Filesystems
+      Root Filesystem
+      Cache Management
+      NFS Integration
+      Distributed Filesystems
+      NFS Version 4
+      NFS Version 3
+      NFS Version 2
+    Parallel Filesystem
+    Read-Only Filesystem
+    Legacy Filesystem
+    Platform Storage
+    Compressed Filesystem
+    Flash Filesystem
+      Mount Optimization
+      Write Buffer
+      Extended Attributes
+      Error Checking
+    Encryption
+      Filesystem Messaging
+    Caches
+      Filesystem Caching
+    Extended Attributes
+    Filesystem Recovery
+    Filesystem Monitoring
+    Cluster Locking
+    Statistics
+    Memory Mapping
+    Filesystem Metadata
+    Quota
+    Character Encoding
+    Device Nodes
+  Module Management
+  Minimization
+  Virtualization
+    Guest Support
+      Hypervisor
+    Userspace Interface
+    Virtual Platform Support
+    Low-Level Device Control
+    Packet Steering
+  Memory Management
+    Memory Protection
+    Memory Allocation
+    Swap
+  Interrupt Handling
+  Hotplug
+    Dynamic Logical Partitioning
+    Memory Regions
+  Cgroup
+    Resource Control
+      CPU Bandwidth Control
+  Library Routines
+  Fault Tolerance
+  Hugepage
+  Containerization
+  Timekeeping
+  Error Handling
+  Process Management
+  System Management
+  High Availability
+  BPF Support
+  Kernel Mechanisms
+    Kernel Data Handling
+  Device Management
+    User-Space Interaction
+  TTY
+    Console Binding
+    Console Mapping
+  User-Space Drivers
+  User Interface
+  Kernel Modules
+Hardware Support
+  Built-in Firmware
+  Storage Support
+    Driver Support
+    Block Device Drivers
+      Null Block Device
+      Extended Error Reporting
+      Diagnostic Mode
+      FBA Support
+      ECKD Support
+      Profiling
+      Write Cache
+    SCSI Support
+      Error Recovery
+      ALUA Support
+      EMC Support
+      HP/COMPAQ MSA Support
+      RDAC Support
+      PCIe SAS/SATA Support
+      PMC Sierra Support
+      NCR53C710 Support
+      Firmware Build
+      SCSI Error Recovery
+      Timing Configuration
+      Queue Management
+      Firmware Support
+    Multipath Support
+    RAID
+      RAID Autodetection
+    Logical Volume Management
+    Clustering
+    Persistent Memory
+    PCI Express Optimization
+    MTD
+      NAND Flash Support
+      NAND
+        Error Correction
+          Software ECC
+        OTP
+        Bad Block Management
+        Advanced Probing
+        NAND ECC
+        High Probing
+        Probing Address
+    Flash Memory Support
+    Flash Media
+    EEPROM Support
+    Network Storage Support
+    Fibre Channel Support
+    SAS Support
+    PCI-X Support
+    Storage Controllers
+    RAM Support
+    Flash Chip Configuration
+    Partition Parsers
+    Target Mode Support
+    Management Module Support
+      RAID Controller Support
+  CPU Support
+    Intel Platform Support
+    Cache Drivers
+    X86 Firmware Support
+    ARMv8.2 Architectural Features
+    Hardware Acceleration
+    Endianness Handling
+  Peripheral Support
+    Watchdog
+    Composable DMA
+    Bus Support
+      Bus Controller
+      User-space Access
+      Development Tools
+    Timestamping Support
+    BMC Support
+    Device Drivers
+    LED Support
+      Flash LED Support
+      Brightness Control
+      Multicolor LED Support
+      LED Triggers
+    USB Support
+      USB Type-C Support
+        PMIC GLINK Support
+        STM32G0 Support
+        Cypress CCGx Support
+        I2C Interface Support
+      Physical Layer
+      DSL Modem Support
+      USB Console
+      Serial Converter
+      Barcode Scanner
+      USB Controller Support
+      DMA Support
+      PIO Support
+      USB Host Controller
+      USB OHCI Support
+      EHCI Support
+      USB Gadget Support
+        USB FunctionFS Support
+        USB Audio Support
+      USB Peripheral Controller
+    Input Device Support
+    Hardware Monitoring
+    Firmware Interaction
+    Test & Validation
+    GPIO & IRQ Handling
+    Counter Support
+    Interconnect Support
